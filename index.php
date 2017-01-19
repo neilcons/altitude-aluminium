@@ -5,7 +5,7 @@ ini_set("session.use_trans_sid",true);
 ini_set("session.use_only_cookies", false);
 ini_set("session.use_cookies", false);
 
-define('SITE_EMAIL_ADDRESS', 'james@theconsultancy.co.uk');
+define('SITE_EMAIL_ADDRESS', 'quote@altitudealuminium.co.uk');
 
 
 /**
