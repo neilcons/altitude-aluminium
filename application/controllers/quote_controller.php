@@ -142,8 +142,8 @@ class Quote_Controller extends CI_Controller {
 		// $this->email->bcc(SITE_EMAIL_ADDRESS);
 		$this->email->subject("Your Altitude Aluminium Slide Door Quote #". str_pad($iDoor_Id, 7, '0', STR_PAD_LEFT));
 
-        $this->email->attach($data['image_url'] .  "assets/downloads/Altitude Aluminium_CP130.pdf");
-        $this->email->attach($data['image_url'] .  "assets/downloads/WDFF25 (4)Terms and conditions of Sale 28.11.16.pdf");
+        $this->email->attach("C:\inetpub\wwwroot\altitudealuminium.echodigitalmedia.co.uk\assets/downloads/Altitude Aluminium_CP130.pdf");
+        $this->email->attach("C:\inetpub\wwwroot\altitudealuminium.echodigitalmedia.co.uk\assets/downloads/WDFF25 (4)Terms and conditions of Sale 28.11.16.pdf");
 
 		// assign the bifold to the view
 		// $data['bifold'] = $oSessionBifold;
