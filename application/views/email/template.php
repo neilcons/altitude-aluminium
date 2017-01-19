@@ -13,7 +13,7 @@
                                 <td>
                                     <table style="width:350px; font-family: Arial, Helvetica, sans-serif; text-align:right;" align="right" cellpadding="0" cellspacing="0">
                                         <tr>
-                                            <td style="font-size: 35px; color: #00C0D7; font-weight: bold;">Your Sliding Door Enquiry</td>
+                                            <td style="font-size: 35px; color: #00C0D7; font-weight: bold;">Your Enquiry</td>
                                         </tr>
                                         <tr>
                                             <td style="font-size: 15px; color: #656565;">Date: <?php echo Date('d/m/Y'); ?> &nbsp; Order Ref: <?php echo $door->reference(); ?> </td>
