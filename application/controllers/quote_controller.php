@@ -80,7 +80,7 @@ class Quote_Controller extends CI_Controller {
 		);
 
 		// set the url to use for images in the email
-		$data['image_url'] = 'http://dev.beta.echodigitalmedia.co.uk/aa/';
+		$data['image_url'] = 'http://altitudealuminium.echodigitalmedia.co.uk/';
 
 		// load the quote helper and get the basic price minus vat and unformatted
 		$this->load->helper('quote');

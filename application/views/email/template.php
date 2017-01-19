@@ -175,20 +175,29 @@
                                             <td colspan="2" style="font-weight: bold; font-size: 14px; color: #333;">Frame Options</td>
                                         </tr>
                                         <tr>
-                                            <td style="width: 50%; vertical-align: top;">External Colour</td>
+                                            <td style="width: 50%; vertical-align: top;">Colour</td>
                                             <td style="width: 50%; vertical-align: top;">
                                                 <?php echo $door->print_string('external_colour'); ?> (RAL<?php echo $external_ral; ?>)<br />
                                                 <?php echo $door->external_colour_finish; ?>
                                             </td>
                                         </tr>
+                                    </table>
+
+                                    <!-- glass -->
+                                    <table style="width: 100%; font-size: 12px; color: #333; font-family: Arial, Helvetica, sans-serif;">
                                         <tr>
-                                            <td style="width: 50%; vertical-align: top;">Internal Colour</td>
-                                            <td style="width: 50%; vertical-align: top;">
-                                                <?php echo $door->print_string('internal_colour'); ?> (RAL<?php echo $internal_ral; ?>)<br />
-                                                <?php echo $door->internal_colour_finish; ?>
-                                            </td>
+                                            <td colspan="2" style="font-weight: bold; font-size: 14px; color: #333;">Glass</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50%">Glazing Type</td>
+                                            <td style="width: 50%"><?php echo $glazing_type; ?></td>
                                         </tr>
                                     </table>
+
+                                </td>
+
+
+                                <td style="width: 50%;">
 
                                     <!-- hardware colour -->
                                     <table style="padding-top: 10px; width: 100%; font-size: 12px; color: #333; font-family: Arial, Helvetica, sans-serif;">
@@ -204,46 +213,13 @@
                                             <td style="width: 50%"><?php echo ucfirst($door->print_string('master_handle')); ?></td>
                                         </tr>
                                         <?php if( 1 == 2 ) : ?>
-                                        <tr>
-                                            <td style="width: 50%">Internal Handle</td>
-                                            <td style="width: 50%"><?php echo ucfirst($door->print_string('slave_handle_colour_id')); ?></td>
-                                        </tr>
+                                            <tr>
+                                                <td style="width: 50%">Internal Handle</td>
+                                                <td style="width: 50%"><?php echo ucfirst($door->print_string('slave_handle_colour_id')); ?></td>
+                                            </tr>
                                         <?php endif; ?>
                                     </table>
 
-                                </td>
-
-
-                                <td style="width: 50%;">
-                                    <!-- glass -->
-                                    <table style="width: 100%; font-size: 12px; color: #333; font-family: Arial, Helvetica, sans-serif;">
-                                        <tr>
-                                            <td colspan="2" style="font-weight: bold; font-size: 14px; color: #333;">Glass</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%">Glazing Type</td>
-                                            <td style="width: 50%"><?php echo $glazing_type; ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%">Self Cleaning</td>
-                                            <td style="width: 50%"><?php echo $door->print_string('glass_id'); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%">Tint</td>
-                                            <td style="width: 50%"><?php echo $door->print_string('tint_id'); ?></td>
-                                        </tr>
-                                    </table>
-
-                                    <!-- technical -->
-                                    <table style="padding-top: 10px; width: 100%; font-size: 12px; color: #333; font-family: Arial, Helvetica, sans-serif;">
-                                        <tr>
-                                            <td colspan="2" style="font-weight: bold; font-size: 14px; color: #333;">Technical</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%">Trickle Vents</td>
-                                            <td style="width: 50%"><?php echo $door->print_string('trickle_vent'); ?></td>
-                                        </tr>
-                                    </table>
                                 </td>
 
                             </tr>
