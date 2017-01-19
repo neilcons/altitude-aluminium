@@ -105,8 +105,12 @@ $db['production'] = array(
     // 'hostname' => 'localhost\sqlexpress',
     // 'username' => 'sa',
     // 'password' => 'root',
-    // 'database' => 'ags',
+    // 'database' => 'altitudealuminium',
 
+	'hostname' => '172.16.7.162',
+	'username' => 'ags',
+	'password' => 'jUys71jsap1la',
+	'database' => 'altitudealuminium',
 
 	'dbdriver' => 'sqlsrv',
 	'dbprefix' => '',

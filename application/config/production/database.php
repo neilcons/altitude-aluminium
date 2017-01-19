@@ -96,7 +96,7 @@ $db['production'] = array(
     //'password' => 'localp455',
     //'database' => 'ags',
 
-	'hostname' => '5.57.59.209',
+	'hostname' => '172.16.7.162',
 	'username' => 'ags',
 	'password' => 'jUys71jsap1la',
 	'database' => 'altitudealuminium',
