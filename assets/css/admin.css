@@ -1,0 +1,39 @@
+table.admin {
+	margin-top: 50px;
+	width: 100%;
+	font-size: 12px;
+}
+
+table.admin thead tr {
+	border-bottom: 2px solid #333;
+}
+
+table.admin tbody tr {
+	transition: 2s all ease;
+}
+
+table.admin tbody tr:hover {
+	background: #eee;
+	transition: 0.3s all ease;
+}
+
+table.admin tbody tr.focus {
+	background: #ddd;
+}
+
+table.admin tr th {
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.admin tr td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	vertical-align: top;
+}
+
+table.admin tr td.customer-details {
+	text-align: right;
+}
