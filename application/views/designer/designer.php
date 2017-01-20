@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="step1door">
-                    <h1 class="title"><img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 10px" /> Slide Door Designer <br> <span style="font-size:0.7em">Altitude Aluminium Reynars CP130 Sliding Door</span></h1>
+                    <h1 class="title"><img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 15px" /> <span style="padding-top:5px">Lift and Slide Door Designer <br> <span style="font-size:0.7em">Altitude Aluminium Reynaers CP130 Sliding Door</span></span></h1>
                     <div class="step1doorimg">
                         <img id="door-preview" src="<?php echo base_url(); ?>/assets/images/slider-preview.png" alt="" />           
                     </div>
@@ -85,7 +85,7 @@
                         </div>
                         <div id="sideinfo-glass" class="tips" style="display: none;">
                             <h3>Glass</h3>
-                            <p>Tailor your sliding door by selecting from Double Glazing or Triple Glazing.</p>
+                            <p>Double Glazing Units</p>
                         </div>
                         <div id="sideinfo-technical" class="tips" style="display: none;">
                             <h3>Technical</h3>
@@ -300,21 +300,30 @@
                         <!-- top row -->
                         <div class="row">
                             <div class="col-xs-6">
-                                <div class="row"> 
-
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <p>
+                                            <img src="/assets/images/image_layers/hardware/double.png" style="margin-left:10px; margin-right:15px" align="left"> All of our sliding doors are supplied with Double Glazing.
+                                        </p>
+                                    </div>
+                                    <!--
                                     <div class="col-xs-4">
                                         <p>Glazing Type</p>
                                     </div>
                                     <div class="col-xs-8">
                                         <?php
-                                            $aOptions = array(
-                                                array('value' => '0', 'text' => '<img src="'. base_url() .'/assets/images/image_layers/hardware/dropdowns/double.png" /> Double Glazing'),
-                                                array('value' => '1', 'text' => '<img src="'. base_url() .'/assets/images/image_layers/hardware/dropdowns/triple.png" /> Triple Glazing'),
-                                            );
-                                            $this->load->view('designer/block/dropdown', array('target'=>'triple_glazing', 'id'=>'glazing-dropdown', 'update_image'=>'true', 'skip_fade'=>'true', 'options'=>$aOptions));
-                                            echo form_hidden('triple_glazing', 0);
+                                            //$aOptions = array(
+                                            //    array('value' => '0', 'text' => '<img src="'. base_url() .'/assets/images/image_layers/hardware/dropdowns/double.png" /> Double Glazing'),
+                                            //    array('value' => '1', 'text' => '<img src="'. base_url() .'/assets/images/image_layers/hardware/dropdowns/triple.png" /> Triple Glazing'),
+                                            //);
+                                            //$this->load->view('designer/block/dropdown', array('target'=>'triple_glazing', 'id'=>'glazing-dropdown', 'update_image'=>'true', 'skip_fade'=>'true', 'options'=>$aOptions));
+                                            // echo form_hidden('triple_glazing', 0);
                                         ?>
                                     </div>
+                                    -->
+                                    <?php
+                                        echo form_hidden('triple_glazing', 0);
+                                    ?>
                                 </div>
                             </div>
                             <div class="col-xs-6">

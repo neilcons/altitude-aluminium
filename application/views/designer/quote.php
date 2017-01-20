@@ -17,7 +17,8 @@
             <div class="col-xs-8">
 
                 <h1 class="title">
-                    <img alt="" src="<?php echo base_url(); ?>assets/images/altalum.png"> Your New Sliding Door
+                    <img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 15px" />
+                    <span style="padding-top:14px; padding-bottom:20px;">Your New Raynaers CP130 Lift and Slide Door</span>
                 </h1>
 
                 <!-- the door image -->

@@ -73,7 +73,7 @@ class Quote_Controller extends CI_Controller {
 	{
 		// view data storage array
 		$data = array(
-			'aa_telephone_number'		=> '0800 2888 066'
+			'aa_telephone_number'		=> '01244 529197'
 		,	'aa_email_address'			=> SITE_EMAIL_ADDRESS
 		,	'aa_freephone_telephone'	=> ''
 		,	'aa_footer_copyright'		=> '&copy; '. Date('Y') .' Altitude Aluminium, all rights reserved.'

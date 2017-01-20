@@ -9,7 +9,7 @@
                     <td>
                         <table style="width: 650px; border-bottom: 1px solid #bcbcbc; font-family: Arial, Helvetica, sans-serif;" align="center" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td style="padding-left:6px;"><a href="http://www.altitudealuminium.co.uk/"><img src="<?php echo $image_url; ?>assets/images/email/altalum.png" height="34" width="70" alt="" border="0" /></a></td>
+                                <td style="padding-left:6px;"><a href="http://www.altitudealuminium.co.uk/"><img src="<?php echo $image_url; ?>assets/images/altalum-lrg.png" height="100" width="260" alt="" border="0" /></a></td>
                                 <td>
                                     <table style="width:350px; font-family: Arial, Helvetica, sans-serif; text-align:right;" align="right" cellpadding="0" cellspacing="0">
                                         <tr>
@@ -38,7 +38,7 @@
                         <table style="width:650px; font-family: Arial, Helvetica, sans-serif;" align="center" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td style="width: 600px; padding-bottom: 30px; background: #F3F3F3; border: 1px solid #D9D9D9; text-align: center; overflow: hidden;">
-                                    <p style="padding-top: 20px; color: #00C0D7; font-weight: bold; text-align: center;">Your Sliding Door</p>
+                                    <p style="padding-top: 20px; color: #00C0D7; font-weight: bold; text-align: center;">Your Reynaers CP 130 Lift and Slide Door</p>
                                     <img style="margin: 0 auto; border: 0; padding: 0; display: block; max-width: 600px" src="<?php echo $image_source; ?>">
                                 </td>
                             </tr>
@@ -65,6 +65,7 @@
                                                 <span style="font-size: 29px; color: #00C0D7;">Hi <?=$first_name ?></span><br />
                                                 <p>Thank you for requesting a quote, your price breakdown is shown here.</p>
                                                 <p>You can contact us regarding your quote by using any of the methods shown below.</p>
+                                                <p>When comparing Aluminium Lift and Slide doors please ensure that it is a Reynaers System and Reynaers hardware and is installed by an accredited Reynaers installer.</p>
                                             </td>
                                             
                                             <td valign="top" style="vertial-align: top; padding: 0 20px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #818181; line-height: 21px;">
@@ -84,6 +85,9 @@
                                                         <tr>
                                                             <td style="padding: 4px 0; font-size: 14px; border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: bold;">TOTAL inc VAT</td>
                                                             <td style="padding: 4px 0; font-size: 14px; border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: bold;">&pound;<?php echo $quote_total; ?></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="padding: 4px 0; font-size: 12px;">This quote is valid for 60 days</td>
                                                         </tr>
                                                     </table>
                                                 </div>
