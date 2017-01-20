@@ -65,6 +65,11 @@
                 </div>
                 <div class="step1details">
                     <div class="step1total">
+
+                        <div style="display:inline-block; width:100%; margin-top:-10px; margin-bottom:15px;">
+                            <img src="<?php echo base_url(); ?>/assets/images/certs.png" alt="" height="50" align="right" />
+                        </div>
+
                         <h2>Your Total</h2>
                         <p class="total-price">&pound;<span id="price">0.00</span> <span class="vat">inc. VAT</span></p>
 

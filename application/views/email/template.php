@@ -240,6 +240,11 @@
 
                 <!-- how to order cta's -->
                 <tr>
+                    <td style="text-align:center;">
+                        <img src="<?php echo $image_url; ?>assets/images/certs.png" height="50" />
+                    </td>
+                </tr>
+                <tr>
                     <td>
                         <table style="width: 650px; padding: 20px; background: #00C0D7; font-family: Arial, Helvetica, sans-serif; color: #FFF;" align="center" cellpadding="0" cellspacing="0">
                             <tr style="vertical-align: bottom;">
