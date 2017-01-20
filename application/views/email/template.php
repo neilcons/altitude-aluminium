@@ -242,6 +242,7 @@
                 <tr>
                     <td style="text-align:center;">
                         <img src="<?php echo $image_url; ?>assets/images/certs.png" height="50" />
+                        <br><br>
                     </td>
                 </tr>
                 <tr>
