@@ -38,7 +38,7 @@
                         <table style="width:650px; font-family: Arial, Helvetica, sans-serif;" align="center" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td style="width: 600px; padding-bottom: 30px; background: #F3F3F3; border: 1px solid #D9D9D9; text-align: center; overflow: hidden;">
-                                    <p style="padding-top: 20px; color: #00C0D7; font-weight: bold; text-align: center;">Your Reynaers CP 130 Lift and Slide Door</p>
+                                    <p style="padding-top: 20px; color: #00C0D7; font-weight: bold; text-align: center;">Your Reynaers Aluminium CP130 Lift and Slide Door</p>
                                     <img style="margin: 0 auto; border: 0; padding: 0; display: block; max-width: 600px" src="<?php echo $image_source; ?>">
                                 </td>
                             </tr>
