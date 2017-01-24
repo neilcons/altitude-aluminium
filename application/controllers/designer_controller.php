@@ -197,7 +197,8 @@ class Designer_Controller extends CI_Controller {
 		$data = array();
 		// $data['bifold'] = $this->session->current_bifold;
 		$data['bifold'] = $this->session->current_design;
-		$data['colour_ranges'] = $this->db->order_by('order')->get_where('colour_range', array('id'=>3))->result('Colour_Range');
+		// $data['colour_ranges'] = $this->db->order_by('order')->get_where('colour_range', array('id'=>3))->result('Colour_Range');
+        $data['colour_ranges'] = $this->db->order_by('order')->get('colour_range')->result('Colour_Range');
 		$this->load->view('designer/step2/external_colours', $data);
 	}
 

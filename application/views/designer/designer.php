@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="step1door">
-                    <h1 class="title"><img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 15px" /> <span style="padding-top:5px">Lift and Slide Door Designer <br> <span style="font-size:0.7em">Altitude Aluminium Reynaers CP130 Sliding Door</span></span></h1>
+                    <h1 class="title"><img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 15px" /> <span style="padding-top:5px">Lift and Slide Door Designer <br> <span style="font-size:0.7em">Altitude Aluminium Reynaers Aluminium CP130 Sliding Door</span></span></h1>
                     <div class="step1doorimg">
                         <img id="door-preview" src="<?php echo base_url(); ?>/assets/images/slider-preview.png" alt="" />           
                     </div>
@@ -91,6 +91,7 @@
                         <div id="sideinfo-glass" class="tips" style="display: none;">
                             <h3>Glass</h3>
                             <p>Double Glazing Units</p>
+                            <p>Our Double Glazing Insulated Glass (IG) unit with 28mm Warm Edge Spacer Bars and argon filled achieves a Ug Value of just 1.2 W/m2k.</p>
                         </div>
                         <div id="sideinfo-technical" class="tips" style="display: none;">
                             <h3>Technical</h3>
