@@ -207,6 +207,14 @@ function quote__get_basic_price($required_output = 'json', $format = true, $add_
 	}
 */
 
+    // Add 7.5% for non-standard ral colours (range id: 3)
+    $CI = &get_instance();
+    $colourRange = $CI->db->get_where('colour', array('id'=>$oDoor->external_colour_id))->row('colour_range_id');
+
+    if ($colourRange == 3) {
+        $dQuotePrice = $dQuotePrice*1.075;
+    }
+
 
 	// update the price based on vat requirement
 // echo 'total price = ' . $dQuotePrice .'<br />';
