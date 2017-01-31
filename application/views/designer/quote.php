@@ -18,7 +18,7 @@
 
                 <h1 class="title">
                     <img src="<?php echo base_url(); ?>/assets/images/altalum.png" alt="" align="left" style="margin-right: 15px" />
-                    <span style="padding-top:14px; padding-bottom:20px;">Your New Reynaers Aluminium CP130 Lift and Slide Door</span>
+                    <span style="padding-top:6px; padding-bottom:15px;">Your New Reynaers Aluminium <br> CP130 Lift and Slide Door</span>
                 </h1>
 
                 <!-- the door image -->
@@ -91,6 +91,7 @@
     $dVAT = $dPrice - $dNet;
 ?>
             <div class="col-xs-4">
+                <!--
                 <h1 class="center">Your Basic Quote</h1>
                 <h1 class="center">&pound;<span id="price"><?php echo $price; ?></span></h1>
                 <h3 class="center">
@@ -98,6 +99,10 @@
                     &nbsp;+&nbsp;
                     VAT &pound;<span id="vat"><?php echo number_format($dVAT, 2); ?></span>
                 </h3>
+                -->
+                <div class="row type-container">
+                    <br><br>
+                </div>
                 <div class="row type-container">
                     <div class="col-xs-5">
                         <p>

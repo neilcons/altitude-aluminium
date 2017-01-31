@@ -176,8 +176,20 @@ class Quote_Controller extends CI_Controller {
 	 */
 	public function thanks($id)
 	{
-		$data['image_id'] = $id;
-		$this->load->view('designer/thanks', $data);
+        $oDoor = new Sliding_Door();
+        $oDoor = $oDoor->get_door($id);
+
+        $dBasicPrice = $oDoor->quote_price;
+        $dVat = $dBasicPrice * 0.2;
+        $dTotalPrice = $oDoor->quote_price_with_vat;
+
+        $data['quote_price'] = number_format($dBasicPrice, 2);
+        $data['quote_vat'] = number_format($dVat, 2);
+        $data['quote_total'] = number_format($dTotalPrice, 2);
+
+        $data['image'] = $id;
+
+		$this->load->view('designer/thanks', ['data' => $data]);
 	}
 
 }

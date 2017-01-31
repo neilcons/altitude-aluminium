@@ -70,8 +70,8 @@
                             <img src="<?php echo base_url(); ?>/assets/images/certs.png" alt="" height="50" align="right" />
                         </div>
 
-                        <h2>Your Total</h2>
-                        <p class="total-price">&pound;<span id="price">0.00</span> <span class="vat">inc. VAT</span></p>
+                        <!--<h2>Your Total</h2>
+                        <p class="total-price">&pound;<span id="price">0.00</span> <span class="vat">inc. VAT</span></p>-->
 
                         <!-- tips for each section -->
                         <div id="sideinfo-configuration" class="tips">
