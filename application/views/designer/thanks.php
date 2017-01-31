@@ -1,7 +1,7 @@
 <?php
 	$this->load->view('structure/header/designer.php');
 
-	$price = $data['quote_price'];
+	$price = $data['quote_total'];
 	$dPrice = str_replace(',', '', $price);
 	$dNet = $dPrice / 1.2;
 	$dVAT = $dPrice - $dNet;
