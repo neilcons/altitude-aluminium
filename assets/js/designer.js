@@ -60,32 +60,6 @@ $(function () {
 
 
 	/*
-	 * handles the keyup action on the height field
-	 */
-	$('#height').keyup(function() {
-		var height_str = String(this.value);
-
-		if(height_str.length == 4) {
-			validate_height();
-		}
-	});
-
-
-	/*
-	 * handles the blur action on the height field
-	 */
-	$('#height').change(function() {
-		var height_str = String(this.value);
-
-		if(height_str.length > 0) {
-			validate_height();
-		} else {
-			show_input_error('height', false);
-		}
-	});
-
-
-	/*
 	 * handles the keyup action for the width field
 	 */
 	$('#width').keyup(function (e) {
@@ -452,6 +426,9 @@ function validate_height() {
 
 	if(height_val < height_input.data('min') || height_val > height_input.data('max')) {
 		show_input_error('height', true);
+        var oConfig = $('div.configoption');
+        oConfig.html('<div class="config-waiting"><p>Enter your sizes to view further options</p></div>');
+        reset_selected_options();
 		return false;
 	} else {
 		show_input_error('height', false);
@@ -472,6 +449,9 @@ function validate_width() {
 
 	if(width_val < width_input.data('min') || width_val > width_input.data('max')) {
 		show_input_error('width', true);
+        var oConfig = $('div.configoption');
+        oConfig.html('<div class="config-waiting"><p>Enter your sizes to view further options</p></div>');
+        reset_selected_options();
 		return false;
 	} else {
 		show_input_error('width', false);
@@ -502,17 +482,28 @@ function get_configurations() {
 
 		// get the configurations
 		scheme_lookup_handle = $.post(site_url + 'ajax/get_scheme_choices', $('#primaryform').serialize(), function (e) {
+
 			// if the styles returned are not already loaded, then update the options
+
 			var oConfig = $('div.configoption');
-			if(oConfig.attr('data-loaded-configurations') != e.styles) {
-				// draw configurations
-				oConfig.html(e.html);
 
-				// set the styles returned
+			if (e.status == false) {
+
+				oConfig.html('<div class="config-waiting"><p>Enter your sizes to view further options</p></div>');
 				oConfig.attr('data-loaded-configurations', e.styles);
-
-				// clear previous settings
 				reset_selected_options();
+
+			} else {
+				//if (oConfig.attr('data-loaded-configurations') != e.styles) {
+					// draw configurations
+					oConfig.html(e.html);
+
+					// set the styles returned
+					oConfig.attr('data-loaded-configurations', e.styles);
+
+					// clear previous settings
+					reset_selected_options();
+				//}
 			}
 		});
 	}

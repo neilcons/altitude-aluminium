@@ -4,6 +4,7 @@ class Ajax_Controller extends CI_Controller {
 
 	public function get_scheme_choices()
 	{
+        //$this->output->enable_profiler();
 		// set vars
 		$ret = array();
 		$ret['status'] = FALSE;
@@ -14,12 +15,13 @@ class Ajax_Controller extends CI_Controller {
 
 		// get the width
 		$width = $this->input->post('width');
+        $height = $this->input->post('height');
 
 		// ensure we have a valid width
-		if(is_numeric($width)){
+		if(is_numeric($width) && is_numeric($height)){
 
 			// get schemes based on width
-			$oSchemes = $this->sliding_door_scheme_model->get_available_schemes_for_width($width);
+			$oSchemes = $this->sliding_door_scheme_model->get_available_schemes_for_width($width, $height);
 
 			if(count($oSchemes) > 0){
 				$ret['status'] = TRUE;
@@ -30,7 +32,7 @@ class Ajax_Controller extends CI_Controller {
 				// set all styles returned
 				$sConfigs = '';
 				foreach( $oSchemes as $key => $scheme ) {
-					$sConfigs .= $scheme->style . ( $key != count($oSchemes)-1 ? ',' : '' );
+                    $sConfigs .= $scheme->style . ($key != count($oSchemes) - 1 ? ',' : '');
 				}
 				$ret['styles'] = $sConfigs;
 
