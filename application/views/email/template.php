@@ -224,6 +224,21 @@
                                         <?php endif; ?>
                                     </table>
 
+                                    <!-- dimensions -->
+                                    <table style="padding-top: 10px; width: 100%; font-size: 12px; color: #333; font-family: Arial, Helvetica, sans-serif;">
+                                        <tr>
+                                            <td colspan="2" style="font-weight: bold; font-size: 14px; color: #333;">Dimensions</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50%">Width</td>
+                                            <td style="width: 50%"><?php echo $door->print_string('width'); ?>mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50%">Height</td>
+                                            <td style="width: 50%"><?php echo $door->print_string('height'); ?>mm</td>
+                                        </tr>
+                                    </table>
+
                                 </td>
 
                             </tr>
