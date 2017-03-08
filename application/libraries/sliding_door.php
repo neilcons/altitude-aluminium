@@ -217,6 +217,12 @@ class Sliding_Door extends Database_Table_Object
 			case 'thandle':
 				return $this->thandle_colour->name;
 
+            case 'width':
+                return $this->width;
+
+            case 'height':
+                return $this->height;
+
 			default:
 				return "[\${$field}]";
 				break;

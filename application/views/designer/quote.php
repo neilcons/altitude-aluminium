@@ -77,6 +77,16 @@
                                 <span class="text-success"><i class="glyphicon glyphicon-ok-sign"></i></span>
                                 Handle colour: <?php echo ucfirst($door->print_string('main_handle_external_colour_id')); ?>
                             </p>
+
+                            <h2>Dimensions</h2>
+                            <p>
+                                <span class="text-success"><i class="glyphicon glyphicon-ok-sign"></i></span>
+                                Width: <?php echo $door->print_string('width'); ?>mm<br />
+                            </p>
+                                    <p>
+                                        <span class="text-success"><i class="glyphicon glyphicon-ok-sign"></i></span>
+                                        Height: <?php echo $door->print_string('height'); ?>mm<br />
+                                    </p>
                         </div>
                     </div>
                 </div>
