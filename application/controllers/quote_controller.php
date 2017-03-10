@@ -137,7 +137,7 @@ class Quote_Controller extends CI_Controller {
 		$to = $this->input->post('your_email');
 		$this->email->from(SITE_EMAIL_ADDRESS, "Altitude Aluminium");
 		$this->email->to($to);
-		// $this->email->cc('noreply@echodigitalmedia.co.uk');
+		$this->email->cc('quote@altitudealuminium.co.uk');
 		// $this->email->reply_to(SITE_EMAIL_ADDRESS);
 		// $this->email->bcc(SITE_EMAIL_ADDRESS);
 		$this->email->subject("Your Altitude Aluminium Slide Door Quote #". str_pad($iDoor_Id, 7, '0', STR_PAD_LEFT));
