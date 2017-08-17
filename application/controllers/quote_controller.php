@@ -130,6 +130,13 @@ class Quote_Controller extends CI_Controller {
 		$data['external_ral'] = $oExternalColour->RAL;
 		$data['internal_ral'] = $oInternalColour->RAL;
 
+		//customer details
+		$data['your_address'] = $oSessionDesign->your_address;
+		$data['your_name'] = $oSessionDesign->your_name;
+		$data['your_postcode'] = $oSessionDesign->your_postcode;
+		$data['your_tel'] = $oSessionDesign->your_tel;
+		$data['your_email'] = $oSessionDesign->your_email;
+
 		// load the email library
 		$this->load->library('email');
 

@@ -309,6 +309,19 @@ $(function () {
 		help.modal('show');
 	});
 
+	//$('#request-quote').on('click', function() {
+	//	$('form#primaryform').submit();
+	//});
+
+	$('form#primaryform').validator().on('submit', function (e) {
+	    if (e.isDefaultPrevented()) {
+	      // handle the invalid form...
+	    } else {
+			$('#request-quote').val('Processing...');
+			$('#request-quote').prop('disabled', true);
+	    }
+	})
+
 });
 
 

@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <p style="font-size:0.8em">We aim to contact you within 48 hours to discuss your interest. We will <strong>never</strong> pass your details onto any 3rd party.</p>
-                <p class="submit-button"><input type="submit" value="Request a Quote" class="btn btn-block btn-success btn-lg"></p>
+                <p class="submit-button"><input type="submit" value="Request a Quote" class="btn btn-block btn-success btn-lg" id="request-quote"></p>
                 <p id="info"></p>
 
             </div>

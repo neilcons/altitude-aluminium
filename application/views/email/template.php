@@ -51,6 +51,50 @@
                 <!-- separator -->
                 <?php $this->load->view('email/blocks/separator'); ?>
 
+                <tr>
+                    <td>
+                        <table style="width:650px; font-family: Arial, Helvetica, sans-serif;" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; font-family: Arial, Helvetica, sans-serif;" align="left" cellpadding="0" cellspacing="0">
+                                        <tr style="vertical-align: top;">
+                                            <td style="width: 370px; max-width: 370px; vertial-align: top; color: #333;">
+                                                <span style="font-size: 29px; color: #00C0D7;">Your details</span><br />
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table style="width:350px; font-family: Arial, Helvetica, sans-serif; text-align:left;" align="left" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td style="font-size: 15px; color: #656565;">Name:</td>
+                                                        <td style="font-size: 15px; color: #656565;"><?php echo ucwords($your_name); ?> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-size: 15px; color: #656565; vertical-align: top;">Address:</td>
+                                                        <td style="font-size: 15px; color: #656565;"><?php echo nl2br($your_address); ?> <br> <?php echo strtoupper($your_postcode); ?> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-size: 15px; color: #656565;">Phone no:</td>
+                                                        <td style="font-size: 15px; color: #656565;"><?=$your_tel ?> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-size: 15px; color: #656565;">Email:</td>
+                                                        <td style="font-size: 15px; color: #656565;"><?=$your_email ?> </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- separator -->
+                <?php $this->load->view('email/blocks/separator'); ?>
+
 
 
                 <!-- bifold and price summary -->
